@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Montserrat:wght@500;700&family=Roboto:wght@500;700&display=swap');
+
+    /* font-family: 'Hanken Grotesk', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif; */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%);
+}
+
+:root {
+    font-size: 18px;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    background-color: hsl(221, 100%, 96%);
+    inset: 0;
+    opacity: 1;
+}
+
+main {
+    position: relative;
+    isolation: isolate;
+    top: 165px;
+    /* border: 2px solid red; */
+    box-shadow: 0px 1px 15px 1px rgba(0,0,0,0.1);
+    margin: 0 auto;
+    border-radius: 25px;
+    width: 599px;
+    display: flex; 
+    /* flex-wrap: wrap; */
+}
+
+.row {
+    display: flex;
+}
+
+.left-section {
+    width: 286px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, hsl(252, 100%, 67%) ,hsl(241, 81%, 54%));
+    padding: 1em 0.2em;
+    border-radius: 25px;
+}
+
+.test-result > h4 {
+    font-weight: 700;
+}
+
+.test-number {
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(to bottom left, #2421ca,#4e21ca);
+    border-radius: 50%;
+    text-align: center;
+}
+.test-result-title > h4 {
+    color: lightgrey;
+    font-weight: 700;
+}
+.test-number span {
+    position: relative;
+    top: -50px;
+}
+
+.test-number > h1 {
+    color: white;
+    font-size: 3.5rem;
+}
+h1,span {
+    font-size: 0.9rem;
+    position: relative;
+    top: -25px;
+    color: lightgrey;
+    line-height: 1.2;
+}
+
+.test-reselt-fedback {
+    text-align: center;
+    margin: 0 auto;
+    width: 85%;
+}
+.test-reselt-fedback h2, p {
+    margin-bottom: 1.4em;
+}
+.test-reselt-fedback h2 {
+    font-weight: 700;
+    color: white;
+    font-size: 1.2rem;
+}
+.test-reselt-fedback p {
+    font-size: 0.95rem;
+    color: rgb(225, 222, 222);
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-weight: 700;
+    width: 40%;
+    margin-left: 25px;
+}
+
+
+.itemchange {
+    color: grey;
+}
+
+.wrapper1 {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    border-radius: 5px;
+    width: 100%;
+    background-color:  hsl(0, 100%, 97%);
+}
+.wrapper1 p:nth-child(2) {
+    color: hsl(0, 100%, 67%);
+}
+.item1 {
+    margin: 10px 0;
+    padding: 3px;
+}
+
+.item1:nth-child(2) {
+    margin-right: auto;
+}
+.wrapper2 {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    width: 100%;
+    border-radius: 5px;
+    background-color: hsl(39, 100%, 97%);
+}
+.wrapper2 p:nth-child(2) {
+    color: hsl(39, 100%, 56%);
+}
+.item2 {
+    margin: 10px 0;
+    padding: 3px;
+}
+
+.item2:nth-child(2) {
+    margin-right: auto;
+}
+.wrapper3 {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    width: 100%;
+    border-radius: 5px;
+    background-color: hsl(166, 100%, 97%);
+}
+.wrapper3 p:nth-child(2) {
+    color: hsl(166, 100%, 37%);
+}
+.item3 {
+    margin: 10px 0;
+    padding: 3px;
+}
+
+.item3:nth-child(2) {
+    margin-right: auto;
+}
+.wrapper4 {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    border-radius: 5px;
+    background-color: lightblue;    
+    width: 100%;
+    background-color: hsl(234, 85%, 97%);
+}
+.wrapper4 p:nth-child(2) {
+    color: hsl(234, 85%, 45%);
+}
+.item4 {
+    margin: 10px 0;
+    padding: 3px;
+}
+
+.item4:nth-child(2) {
+    margin-right: auto;
+}
+
+button {
+    background-color: hsl(241, 81%, 54%);
+    padding: 0.8em 0;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 33px;
+    margin-top: 1em;
+    cursor: pointer;
+}
+button:hover {
+    background-color: hsl(224, 30%, 27%);
+    cursor: pointer;
+}
+
+.right-section h3 {
+    position: relative;
+    top: 15px;
+}
+
+@media screen and (max-width: 375px) {
+    main {
+        /* border: 2px solid red;            */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+
+    .left-section {
+        width: 62%;
+        margin-left: 0.5em;
+    }
+    .right-section {
+        width: 53%;
+    }
+}
+
+
+
+
+
+
+/* 
+.container {
+    display: flex;
+  }
+
+  .item {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+  }
+
+  /* Move the second item to the left and the third item to the right */
+  /* .item:nth-child() {
+      display: flex;
+    margin-right: auto;
+  }
+</style>
+<title>Flexbox Example</title>
+</head>
+<body>
+<div class="container">
+  <div class="item">Element 1</div>
+  <div class="item">Element 2</div>
+  <div class="item">Element 3</div>
+  <div class="item">Element 4</div>
+</div> */ 
+
+
+
+
+
+
+
+
